@@ -1,16 +1,14 @@
-# React + Vite
+# Task Manager – Responsive Todo Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, production-ready task management application built to master fundamental component state synchronization, persistent browser data retention, and interactive user interfaces.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
+- **Frontend:** React.js, JavaScript (ES6+), Tailwind CSS
+- **Data Persistence:** Browser LocalStorage API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ⚙️ Core Engineering & Lifecycle Highlights
+- **State Persistence:** Engineered robust local data synchronization by capturing operational changes and caching application state safely within the browser's `localStorage` pipeline.
+- **Component Lifecycle Control:** Utilized core React Hooks (`useState`, `useEffect`) to manage component mounting lifecycles, track dynamic dependency arrays, and eliminate memory leaks during re-render cycles.
+- **Full CRUD Workflows:** Implemented immediate user workflows for adding, toggle-completing, editing inline text, and removing individual document nodes instantly from the UI state list.
+- **Fluid UI Architecture:** Designed a responsive layout using Tailwind CSS utility classes, focusing on clean container sizing, accessible action buttons, and clear interactive focus states.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
